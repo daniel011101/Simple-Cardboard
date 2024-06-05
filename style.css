@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: rgb(20, 20, 20);;
+    min-height: 100%;
+    display: flex;
+}
+
+.container{
+    display: flex;
+    background-color: rgba(221, 221, 221, 0.801);
+    max-width: 70vh;
+    height: 45vh;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 25px;
+    transition: height 0.5s;
+    -webkit-transition: height 0.5s;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.7s;
+    cursor: default;
+    box-shadow: 0 20px 20px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20.6px);
+    -webkit-background-filter: blur(20.6px);
+}
+.container .image{
+    background-color: rgb(113, 155, 156);
+    border: 2px solid rgb(7, 114, 116);
+    max-width: 65vh;
+    height: 40vh;
+    border-radius: 34px;
+    margin: auto;
+    transition: height 0.5s;
+    -webkit-transition: height 0.5s;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.9s;
+    cursor: default;
+}
+
+.container:hover{
+    height: 75vh;
+}
+
+.container .image:hover{
+    height: 70vh;
+}
+
+.container .image img{
+    height: 300px;  
+    position: relative;
+    margin: auto;
+    display: flex;
+    margin-top: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 5px 5px 40px;
+}
+
+.container .image .text p{
+    font-size: 15px;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+    color: rgb(20, 20, 20);
+    display: flex;
+}
+
+.container .image .text .more{
+    float: right;
+    padding-top: 80px;
+    padding-right: 20px;
+    display: flex;
+}
+
+.container .image .text .more a{
+    display: inline-flex;
+}
+
+.container .image .text a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.container .image .text i{
+    font-size: 19px;
+    font-weight: lighter;
+    display: inherit;
+    padding-top: 2px;
+}
